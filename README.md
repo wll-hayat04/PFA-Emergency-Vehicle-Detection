@@ -128,12 +128,9 @@ To handle real-world detection noise (occlusions, motion blur, false negatives),
 
 ## 🎮 Pygame Visualization
 
-A Pygame interface was built as a pedagogical visualization layer, displaying the mode, YOLO score, threshold, and whether the priority decision is accepted or rejected in real time.
+A Pygame interface was built as a pedagogical visualization layer, displaying in real time: the active mode (Baseline / Auto / Confidence), the YOLO confidence score, the decision threshold, traffic fluidity, and whether the priority decision is accepted or rejected.
 
-| Baseline | Auto | Confidence (θ=0.70) |
-|----------|------|----------------------|
-| ![Baseline](pygame_baseline_mode.png) | ![Auto](pygame_auto_mode.png) | ![Confidence](pygame_confidence_mode.png) |
-| No priority granted | Green corridor activated | p̂ = 0.71 ≥ 0.70 → Priority granted |
+![Pygame Demo](pygame_demo.png)
 
 ---
 
