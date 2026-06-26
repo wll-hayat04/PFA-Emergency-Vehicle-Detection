@@ -54,6 +54,28 @@ Camera → YOLO Detection → Confidence Score p̂ → Decision (p̂ ≥ θ ?) �
 - **Model:** YOLOv26m (Ultralytics), fine-tuned on GPU (NVIDIA Tesla T4, Kaggle)
 - **Training:** 50 epochs, image size 640×640, mixed precision (AMP)
 
+### Dataset
+
+The training dataset was sourced from **[Roboflow Universe](https://universe.roboflow.com/search?q=emergency+vehicle)**, a public platform for computer vision datasets.
+
+| Property | Details |
+|----------|---------|
+| Source | Roboflow Universe — *Emergency_Vehicle* project |
+| Total images | **1,547 images** |
+| Classes | Ambulance, Fire Truck, Police Car |
+| Split | Train 70% / Val 15% / Test 15% |
+| Format | YOLO annotation format |
+| License | Publicly licensed image collections |
+
+| Class | Instances | Share |
+|-------|-----------|-------|
+| Ambulance | 1,015 | 48.0% |
+| Fire Truck | 556 | 26.3% |
+| Police Car | 542 | 25.7% |
+| **Total** | **2,113** | **100%** |
+
+Images were collected in diverse real-world conditions (varying lighting, angles, occlusions, distances) to improve model robustness.
+
 ### Results
 
 | Metric | Value |
